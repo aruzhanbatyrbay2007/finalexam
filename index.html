@@ -980,60 +980,98 @@ My goal is to build strong knowledge in technology, develop my professional skil
 
 
                 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">CONTACT</div>
-                <h2 class="section-title">Contacts & feedback</h2>
-                <p class="section-subtitle">
-                    Here you can find my contact information. You can also send a message
-                    using the form below (for real project you would connect it with email service).
-                </p>
-            </div>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-kicker">CONTACT</div>
+      <h2 class="section-title">Contacts</h2>
+      <p class="section-subtitle">
+        You can contact me using the information below.
+      </p>
+    </div>
 
-            <div class="contact-grid">
-                <div class="card">
-                    <h3>Contact details</h3>
-                    <div style="margin-top:0.6rem;">
-                        <div class="contact-item">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">aruzhanbatyrbay2007@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Phone / WhatsApp</span>
-                            <span class="contact-value">+7 777 211 70 63</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Telegram</span>
-                            <span class="contact-value">@Aruka_Batyrbay</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Address</span>
-                            <span class="contact-value">2Beskaragai, Kaskelen, Kazakhstan</span>
-                        </div>
-                       <div class="contact-item">
-  <span class="contact-label">GitHub</span>
-  <span class="contact-value">
-    <a href="https://github.com/aruzhanbatyrbay2007"
-       target="_blank" rel="noopener noreferrer">
-      github.com/aruzhanbatyrbay2007
-    </a>
-  </span>
-</div>
+    <div class="contact-grid">
 
-<div class="contact-item">
-  <span class="contact-label">LinkedIn</span>
-  <span class="contact-value">
-    <a href="https://www.linkedin.com/in/aruzhan-batyrbay-7a61ab32b/"
-       target="_blank" rel="noopener noreferrer">
-      linkedin.com/in/aruzhan-batyrbay-7a61ab32b
-    </a>
-  </span>
-</div>
+      <!-- CONTACT INFO -->
+      <div class="card">
+        <h3>Contact Information</h3>
 
-                    </div>
-                </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">aruzhanbatyrbay2007@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">Phone / WhatsApp</span>
+          <span class="contact-value">+7 777 211 70 63</span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@Aruka_Batyrbay</span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">Address</span>
+          <span class="contact-value">Beskaragai 2, Kaskelen, Kazakhstan</span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">
+            <a href="https://github.com/aruzhanbatyrbay2007" target="_blank" rel="noopener">
+              github.com/aruzhanbatyrbay2007
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">
+            <a href="https://www.linkedin.com/in/aruzhan-batyrbay-7a61ab32b/"
+               target="_blank" rel="noopener">
+              linkedin.com/in/aruzhan-batyrbay
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="card">
+        <h3>Write me a message</h3>
+
+        <form class="contact-form" onsubmit="handleContactSubmit(event)">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" type="email" placeholder="example@gmail.com" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="3"
+              placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Send message
+          </button>
+
+          <p class="form-note">
+            * Demo only — this form does not send real emails.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
                 <div class="card">
                     <h3>Write me a message</h3>
