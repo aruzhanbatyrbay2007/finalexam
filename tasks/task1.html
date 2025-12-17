@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Task 1 – Reverse words order</h2>
+
+<input id="txt" placeholder="Enter sentence">
+<button onclick="run()">Run</button>
+<p id="out"></p>
+
+<script>
+function run(){
+  let s=document.getElementById("txt").value;
+  document.getElementById("out").innerText=
+    s.split(" ").reverse().join(" ");
+}
+</script>
+
+<a href="../tasks.html">⬅ Back to Tasks</a> |
+<a href="../index.html">🏠 Home</a>
+
+</body>
+</html>
