@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 2 – Extract characters</h2>
+
+<input id="s">
+<button onclick="run()">Run</button>
+<p id="o"></p>
+
+<script>
+function run(){
+  let x = s.value;
+  o.innerText =
+   "First: " + x[0] +
+   ", Third: " + x[2] +
+   ", Fourth: " + x[3] +
+   ", Last: " + x[x.length-1];
+}
+</script>
+
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
