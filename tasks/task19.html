@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 19 – Countdown</h2>
+<p id="o">5</p>
+<button onclick="start()">Start</button>
+<script>
+function start(){
+ let n=5;
+ let i=setInterval(()=>{
+  o.innerText=n--;
+  if(n<0) clearInterval(i);
+ },1000);
+}
+</script>
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
