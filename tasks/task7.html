@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 7 – Remove duplicates</h2>
+
+<button onclick="run()">Run</button>
+<p id="o"></p>
+
+<script>
+function run(){
+  let arr = [1,2,2,3,4,4];
+  let unique = [...new Set(arr)];
+  o.innerText = unique;
+}
+</script>
+
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
