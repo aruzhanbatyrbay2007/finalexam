@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 3 – Longest word</h2>
+
+<input id="t">
+<button onclick="run()">Run</button>
+<p id="o"></p>
+
+<script>
+function run(){
+  let words = t.value.split(" ");
+  let longest = words[0];
+
+  for(let w of words){
+    if(w.length > longest.length){
+      longest = w;
+    }
+  }
+  o.innerText = longest;
+}
+</script>
+
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
