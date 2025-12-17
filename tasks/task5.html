@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 5 – Word & space count</h2>
+
+<input id="t">
+<button onclick="run()">Run</button>
+<p id="o"></p>
+
+<script>
+function run(){
+  let s = t.value;
+  let words = s.trim().split(/\s+/).length;
+  let spaces = (s.match(/ /g) || []).length;
+  o.innerText = "Words: " + words + ", Spaces: " + spaces;
+}
+</script>
+
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
