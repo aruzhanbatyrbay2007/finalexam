@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task 4 – Toggle case</h2>
+
+<input id="t">
+<button onclick="run()">Run</button>
+<p id="o"></p>
+
+<script>
+function run(){
+  let r = "";
+  for(let c of t.value){
+    r += c === c.toUpperCase()
+      ? c.toLowerCase()
+      : c.toUpperCase();
+  }
+  o.innerText = r;
+}
+</script>
+
+<a href="../tasks.html">⬅ Back</a> | <a href="../index.html">🏠 Home</a>
+</body>
+</html>
